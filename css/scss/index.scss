@@ -1,0 +1,60 @@
+@import '../iconmoon/style.css';
+
+$width: 100vw;
+$height: 100vh;
+$radius: 4px;
+$canvas-background-color: gray;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.canvas {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  overflow: auto;
+  background-color: $canvas-background-color;
+}
+
+.positioner {
+  position: absolute;
+}
+
+.page {
+  position: absolute;
+  background-color: white;
+}
+
+.image-uploader {
+  border: 1px dashed gray;
+  width: 100%;
+  height: 100%;
+  border-radius: $radius;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >input[type="file"] {
+    display: none;
+  }
+
+  .heightAdjust {
+    width: auto;   
+    height: 100%;
+  }
+
+  .widthAdjust {
+    width: 100%;
+    height: auto;
+  }
+
+  .uploader-plus {
+    font-size: 30vw;
+    color: gray;
+  }
+}
