@@ -22,9 +22,9 @@ export default class ImageUploader extends React.Component {
         let imageClassName = '';
 
         if (width > height) {
-            imageClassName = 'heightAdjust';
+            imageClassName = 'widthAspectFill';
         } else {
-            imageClassName = 'widthAdjust';
+            imageClassName = 'heightAspectFill';
         }
 
         return <div className="image-uploader" onClick={this.uploadFile}>
